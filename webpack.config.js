@@ -23,6 +23,11 @@ module.exports = {
                 exclude: /[\\/]node_modules[\\/]/,
             },
             {
+                test: /\.(jpg|png)$/,
+                loader: 'file-loader',
+                exclude: /[\\/]node_modules[\\/]/,
+            },
+            {
                 test: /\.js$/,
                 exclude: /[\\/]node_modules[\\/]/,
                 loader: 'babel-loader',

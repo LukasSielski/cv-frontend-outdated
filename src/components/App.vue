@@ -1,22 +1,21 @@
 <template>
-    <h class="header">from {{ name }}</h>
+    <app-header/>
 </template>
 
 <script>
+import AppHeader from '@/components/atoms/AppHeader';
+
 export default {
     name: 'App',
-    data() {
-        return {
-            name: 'App',
-        };
+    components: {
+        AppHeader,
     },
 };
 </script>
 
-<style lang="scss" scoped>
-.header {
-    color: red;
-    font-size: 50px;
-    margin-left: 100px;
+<style lang="scss">
+body {
+    margin: 0;
+    padding: 0;
 }
 </style>
